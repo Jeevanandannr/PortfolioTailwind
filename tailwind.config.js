@@ -5,6 +5,9 @@ module.exports = {
   ],
   theme: {
     extend: {},
+    fontFamily:{
+      'Hero-font' : 'Sriracha'
+    }
   },
   plugins: [],
 }

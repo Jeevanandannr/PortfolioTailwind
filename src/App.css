@@ -9,3 +9,13 @@ header ul li {
 .bg-primary{
   background: rgb(255, 76, 76);
 }
+.bg-secondary{
+  background: rgb(250, 47, 47)
+}
+.Mobile-View{
+  @apply fixed top-10 left-0 bg-gray-600 w-full h-1/4;
+}
+
+.Mobile-View li{
+   @apply w-full h-full border-b-2 text-center;
+}
