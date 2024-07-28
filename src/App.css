@@ -10,7 +10,7 @@ header ul li {
   background: rgb(255, 76, 76);
 }
 .bg-secondary{
-  background: rgb(250, 47, 47)
+  background: #9e1b32;
 }
 .Mobile-View{
   @apply fixed top-10 left-0 bg-gray-600 w-full h-1/4;
@@ -18,4 +18,12 @@ header ul li {
 
 .Mobile-View li{
    @apply w-full h-full border-b-2 text-center;
+}
+
+.project-description{
+  @apply absolute left-0 right-0 bottom-0 top-0 bg-[#9e1b32] opacity-0 duration-500 hover:opacity-100;
+}
+
+.btn{
+  @apply bg-primary px-5 py-2 border-2 border-[#9e1b32] hover:border-white rounded-lg
 }
