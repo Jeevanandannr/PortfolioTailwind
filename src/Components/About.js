@@ -1,8 +1,9 @@
 import Aboutpng from "../assets/About.png";
 
 const About = () => {
+  
   return (
-    <section className="flex flex-col md:flex-row px-5 justify-center  bg-secondary">
+    <section className="flex flex-col md:flex-row px-5 justify-center bg-secondary" id="about">
       <div className="md:w-1/2 pt-20">
         <img src={Aboutpng} alt="about"></img>
       </div>

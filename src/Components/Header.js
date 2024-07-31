@@ -6,40 +6,46 @@ const Header = () => {
   
   return (
     <header className="flex justify-between px-5 py-2 bg-primary">
-      <a className="font-bold text-black hover:text-white" href="https://example.com">
+      <a className="font-bold text-black hover:text-white" href="/">
         {" "}
         Jeevanandan N R{" "}
       </a>
       <nav className="hidden md:block">
         <ul className="flex text-white">
           <li>
-            <a href="https://example.com" className='hover:text-black'>Home</a>{" "}
+            <a href="/" className='hover:text-black'>Home</a>{" "}
           </li>
           <li>
-            <a href="https://example.com" className='hover:text-black'>About</a>{" "}
+            <a href="#about" className='hover:text-black'>About</a>{" "}
           </li>
           <li>
-            <a href="https://example.com" className='hover:text-black'>Project</a>{" "}
+            <a href="#projects" className='hover:text-black'>Project</a>{" "}
           </li>
           <li>
-            <a href="https://example.com" className='hover:text-black'>Contact</a>{" "}
+            <a href="#resume" className='hover:text-black'>Resume</a>{" "}
+          </li>
+          <li>
+            <a href="#contact" className='hover:text-black'>Contact</a>{" "}
           </li>
         </ul>
       </nav>
       {menuOpen &&(
         <nav className="block md:hidden">
-        <ul className="flex flex-col text-white Mobile-View">
+        <ul onClick={() => setmenuOpen(!menuOpen)} className="flex flex-col text-white Mobile-View">
           <li>
-            <a href="https://example.com">Home</a>{" "}
+            <a href="/">Home</a>{" "}
           </li>
           <li>
-            <a href="https://example.com">About</a>{" "}
+            <a href="#about">About</a>{" "}
           </li>
           <li>
-            <a href="https://example.com">Project</a>{" "}
+            <a href="#projects">Project</a>{" "}
           </li>
           <li>
-            <a href="https://example.com">Contact</a>{" "}
+            <a href="#resume">Project</a>{" "}
+          </li>
+          <li>
+            <a href="#contact">Contact</a>{" "}
           </li>
         </ul>
       </nav>
